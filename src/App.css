@@ -1,38 +1,363 @@
-.App {
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+/*모두*/
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Pretendard Variable"
+}
+.back{
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFFCE4;
+  
+
+}
+.back > img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -user-drag: none;
+}
+
+/*StartPage*/
+.back_pdiv{
+  
+  display: flex;
+  font-size: 128px;
+  margin-bottom: 140px;
+}
+.back_p{
+  color: #474324;
+}
+.back_pim{
+  color: #FA9E42;
+  font-weight: 600;
+}
+
+.shampoo{
+  position: fixed;
+  left: 295px;
+  bottom: 325px;
+  width: 222px;
+  height: 260px;
+}
+.dry{
+  position: fixed;
+  left: 157px;
+  top: 326px;
+  width: 295px;
+  height: 200px;
+}
+.queen{
+  position: fixed;
+  right: 368px;
+  bottom: 410px;
+  width: 130px;
+  height: 297px;
+}
+.mucle{
+  position: fixed;
+  right: 125px;
+  top: 445px;
+  width: 308px;
+  height: 176px;
+}
+.p_b{
+  display: grid;
+  place-items: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.first_button{
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+  width: 550px;
+  height: 120px;
+  background-color: #FA9E42;
+  color: #FFFFFF;
+  border: 0px;
+  border-radius: 20px;
+}
+
+
+
+.modalback{
+  background-color: #FFF27A;
+  width: 500px;
+  height: 200px;
+  border: 0px;
+  border-radius: 20px;
+  position: fixed;
+  left: 994px;
+  top: 600px;
+  color: #474324;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+  z-index: 1;
+}
+.modalbutton{
+  margin-top: 50px;
+  width: 150px;
+  height: 44px;
+  border-radius: 15px;
+  background-color: white;
+  border: 2px solid #474324;
+  color: #474324;
+  font-size: 24px;
+  font-weight: 500;
+ 
+}
+.modalback > p{
+  margin-top: 30px;
+}
+/*SettingPage*/
+
+.tooth{
+  position: fixed;
+  left: 212px;
+  top: 366px;
+  width: 280px;
+  height: 294px;
+}
+
+.inputtextbox{
+
+  width: 1043px;
+  height: 132px;
+  border: 0px;
+  border-radius: 20px;
+  background-color: white;
+  
+}
+.inputtextbox>button{
+  background: inherit ; border:none; box-shadow:none; border-radius:0; overflow:visible; cursor:pointer;
+  line-height: 132px;
+  width: 30px;
+  margin-left: 80px;
+  height: 30px;
+  
+}
+.inputtext{
+  line-height: 1043px;
+  font-size: 40px;
+  font-weight: 500px;
+  margin-left: 40px;
+  width: 850px;
+  height: 100%;
+  border: none;
+  background-color: none;
+}
+.inputtext::placeholder {
+  font-size: 40px;
+  font-weight: 500px;
+}
+.inputs{
+  position: fixed;
+  display: flex;
+  top: 447px;
+  left: 638px;
+}
+input:focus {
+  outline: none;
+}
+.inputtextsubmit{
+  color: #474324;
+  width: 230px;
+  height: 132px;
+  margin-left: 30px;
+  background-color: #FFF27A;
+  border: 0px;
+  border-radius: 20px;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.cards{
+  display: flex;
+  position: fixed;
+  bottom: 302px;
+  left: 218px;
+}
+.temps{
+  position: fixed;
+  display: flex;
+  bottom: 302px;
+  left: 218px;
+  
+}
+
+.cardbox{
+  width: 417px;
+  height: 556px;
+  background-color: #FFF27A;
+  border: 0px;
+  border-radius: 20px;
+  margin-right: 95px;
+}
+
+.boximg{
+  width: 350px;
+  height: 350px;
+  margin: 34px;
+}
+
+.cardp{
+  font-size: 54px;
+  color: #474324;
+  font-weight: bold;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*RecommendPage*/
+.outp{
+  position: fixed;
+  top: 334px;
+  left: 192px;
+}
+.outp>div{
+  font-size: 138px;
+  display: flex;
+  color: #474324;
+}
+.outp > p{
+  font-size: 138px;
+  color: #474324;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.outpim{
+  color: #FA9E42;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.reboxs{
+  display: flex;
+  position: fixed;
+  left: 192px;
+  bottom: 264px;
+}
+
+.rebox{
+  width: 350px;
+  height: 350px;
+  background-color: #FFF27A;
+  border: 0;
+  border-radius: 20px;
+}
+
+.rebox > p{
+  text-align: center;
+  line-height: 350px;
+  font-size: 128px;
+  color: #474324;
+}
+.reboximg{
+  width: 260px;
+  height: 260px;
+  margin: auto;
+  
+}
+.reboximg>img{
+  margin-top: 45px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.reboxscolumn{
+  margin-left: 61px;
+}
+.reboxscolumn > p{
+  margin-left: 108px;
+  margin-top: 28px;
+  color: #474324;
+  font-size: 78px;
+}
+.ac{
+  position: fixed;
+  right: 142px;
+  top: 0px;
+}
+
+
+
+
+
+
+
+
+.app-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.arrow_button {
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  top: 345px;
+  right: 440px;
+  cursor: pointer;
+  width: 125px;
+  height: 72px;
+}
+
+.itemsbox {
+  
+  width: 721px; /* 기본 크기 */
+  height: 100%; /* 아이템 3개 크기 */
+  overflow: hidden;
+}
+.itembox {
+  position: absolute;
+  width: 721px; /* 기본 크기 */
+  height: 834px; /* 기본 크기 */
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #FFF27A; /* 임시 배경색 */
+  border-radius: 20px;
+  opacity: 0;
+  transform: scale(0);
+  display: none; /* 기본적으로 보이지 않게 설정 */
+}
+.itembox.next {
+  transform: translateY(1350px) scale(0.8); /* 아래 위치 */
+  opacity: 0.5;
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.itembox.prev {
+  transform: translateY(-550px) scale(0.8); /* 위 위치 */
+  opacity: 0.5;
+  display: flex;
+}
+.itembox.active {
+  transform: translateY(466px) scale(1); /* 가운데 위치 */
+  opacity: 1;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.itemsimgp > img{
+  width: 650px;
+  height: 650px;
+  border-radius: 20px;
+  border: 0px;
+}
+.itemsimgp > p{
+  text-align: center;
+  margin-top: 18px;
+  font-size: 70px;
+  font-weight: 500;
 }
